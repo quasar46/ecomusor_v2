@@ -1,0 +1,46 @@
+.swiper {
+    width: 100%;
+}
+
+.swiper-information {
+    padding-top: 55px;
+    .swiper-slide {
+        width: 275px;
+        @media (max-width: 1399px) {
+            width: 100%;
+        }
+        @media (max-width: 767px) {
+            width: 275px;
+        }
+    }
+
+    .swiper-pagination {
+        top: 0;
+        left: 0;
+        bottom: auto;
+        transform: translate(0);
+        text-align: left;
+    }
+    .swiper-pagination-bullet {
+        background-color: #D9D9D9;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: #747474;
+    }
+    &--desctop {
+        @media (max-width: 1399px) {
+            display: none;
+        }
+    }
+    &--tablet {
+        @media (min-width: 1399px) {
+            display: none;
+        }
+    }
+}
+
+.swiper-wrap {
+    @media (max-width: 767px) {
+        margin-right: -30px;
+    }
+}

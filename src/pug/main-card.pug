@@ -1,0 +1,196 @@
+extends templates/layout
+
+block content
+    ._container
+        ul.breadcrumb
+            li 
+                a(href="") Главная
+            li 
+                a(href="") Резина 
+            li  Отходы резины / Шины, покрышки
+        section.main-card-wrap
+            .main-card
+                .main-card__box
+                    .main-card-block(data-time="5 часов назад").selected
+                        svg(width="57" height="63").bookmark-icn
+                            use(xlink:href="#bookmark-icn")
+                        .main-card__content 
+                            .main-card__inner
+                                .main-card__inner-block
+                                    img.main-card__pic(src="img/card1.jpg" alt="")
+                                    .main-card__head
+                                        .main-card__head-col
+                                            a(href="").main-card__name Отходы резины / Шины, покрышки
+                                            span.main-card__text Turpis vivamus facilisis quam enim. Vel id arcu posuere mi suspendisse turpis sit. Ultrices nam aliquet mauris tellus in ornare. 
+                                        .main-card__head-col
+                                            ul.main-card__head-list 
+                                                li.main-card__head-list__item.active Идет сбор заявок
+                                                li.main-card__head-list__item 39 дн 11 ч 38 мин
+
+                            .main-card__tabs.tabs.tabs--desctop 
+                                .main-card__tabs-head.tabs__head 
+                                    button.main-card__tabs-btn.tabs__head-btn.active Основное
+                                    button.main-card__tabs-btn.tabs__head-btn Упаковка
+                                    button.main-card__tabs-btn.tabs__head-btn Дополнительно
+                                .main-card__tabs-content.tabs__content 
+                                    ul.tabs__content-list 
+                                        li.tabs__content-item
+                                            span Категория вторсырья:
+                                            span Резина
+                                        li.tabs__content-item
+                                            span Тип материала:
+                                            span Шины, покрышки и камеры
+                                        li.tabs__content-item
+                                            span Количество:
+                                            span 150 шт
+                                        li.tabs__content-item
+                                            span Класс опасности:
+                                            span -
+                                        li.tabs__content-item.tabs__content-item--footer
+                                            span Доставка:
+                                            span Самовывоз
+                                        li.tabs__content-item
+                                            span Адрес:
+                                            span Москва, Краснобогатырская улица, 2с14
+                                    .map
+                                        <iframe src="https://yandex.ru/map-widget/v1/?ll=37.687605%2C55.816344&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1Njc2NTMwOBJQ0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCa0YDQsNGB0L3QvtCx0L7Qs9Cw0YLRi9GA0YHQutCw0Y8g0YPQu9C40YbQsCwgMtGBMTQiCg0bwBZCFfBDX0I%2C&z=17.15" width="100%" height="100%" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                                .main-card__tabs-content.tabs__content
+                                    ul.tabs__content-list 
+                                        li.tabs__content-item
+                                            span Упаковка и количество штук:
+                                            span -
+                                        li.tabs__content-item
+                                            span Количество, т:
+                                            span -
+                                        li.tabs__content-item
+                                            span Объём груза, м³:
+                                            span -
+                                        li.tabs__content-item
+                                            span Ширина, м:
+                                            span -
+                                        li.tabs__content-item.tabs__content-item--footer
+                                            span Длина, м:
+                                            span -
+                                        li.tabs__content-item
+                                            span Глубина и высота, м:
+                                            span -
+                                .main-card__tabs-content.tabs__content
+                                    ul.tabs__content-list 
+                                        li.tabs__content-item
+                                            span Есть весы на объекте:
+                                            span -
+                                        li.tabs__content-item
+                                            span Погрузка силами продавца:
+                                            span -
+                                        li.tabs__content-item
+                                            span Доп. информация:
+                                            span -
+
+                    .card-aside.card-aside--mobile 
+                        .card-aside__user 
+                            img.card-aside__user-pic(src="img/user.png" alt="")
+                            .card-aside__user-col
+                                h6.card-aside__user-name Иван Иванович
+                                p.card-aside__user-descr ООО «АгроКолеса»
+                            img.card-aside__user-icn(src="img/icns/ChatsCircle.svg" alt="")
+                        .card-aside__content 
+                            .card-aside__block
+                                .card-aside__content-label Текущая ставка
+                                .card-aside__content-price 
+                                    span 600 000 руб
+                                    span (4000 руб за 1 штуку)  
+                                button.btn.btn--gradient Сделать ставку
+                            .card-aside__block
+                                .card-aside__content-label Цена выкупа
+                                .card-aside__content-price 
+                                    span 675 000 руб
+                                    span (4500 руб за 1 штуку)
+                                button.btn.btn--white Выкупить лот
+                            .card-aside__content-footer 
+                                span Безналичный расчет без НДС
+                .tabs.tabs--mobile 
+                    .main-card__tabs-head.tabs__head 
+                        button.main-card__tabs-btn.tabs__head-btn.active Основное
+                        button.main-card__tabs-btn.tabs__head-btn Упаковка
+                        button.main-card__tabs-btn.tabs__head-btn Дополнительно
+                    .main-card__tabs-content.tabs__content
+                        ul.tabs__content-list 
+                            li.tabs__content-item
+                                span Категория вторсырья:
+                                span Резина
+                            li.tabs__content-item
+                                span Тип материала:
+                                span Шины, покрышки и камеры
+                            li.tabs__content-item
+                                span Количество:
+                                span 150 шт
+                            li.tabs__content-item
+                                span Класс опасности:
+                                span -
+                            li.tabs__content-item.tabs__content-item--footer
+                                span Доставка:
+                                span Самовывоз
+                            li.tabs__content-item
+                                span Адрес:
+                                span Москва, Краснобогатырская улица, 2с14
+                        .map
+                            <iframe src="https://yandex.ru/map-widget/v1/?ll=37.687605%2C55.816344&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1Njc2NTMwOBJQ0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCa0YDQsNGB0L3QvtCx0L7Qs9Cw0YLRi9GA0YHQutCw0Y8g0YPQu9C40YbQsCwgMtGBMTQiCg0bwBZCFfBDX0I%2C&z=17.15" width="100%" height="100%" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                    .main-card__tabs-content.tabs__content
+                        ul.tabs__content-list 
+                            li.tabs__content-item
+                                span Упаковка и количество штук:
+                                span -
+                            li.tabs__content-item
+                                span Количество, т:
+                                span -
+                            li.tabs__content-item
+                                span Объём груза, м³:
+                                span -
+                            li.tabs__content-item
+                                span Ширина, м:
+                                span -
+                            li.tabs__content-item.tabs__content-item--footer
+                                span Длина, м:
+                                span -
+                            li.tabs__content-item
+                                span Глубина и высота, м:
+                                span -
+                    .main-card__tabs-content.tabs__content
+                        ul.tabs__content-list 
+                            li.tabs__content-item
+                                span Есть весы на объекте:
+                                span -
+                            li.tabs__content-item
+                                span Погрузка силами продавца:
+                                span -
+                            li.tabs__content-item
+                                span Доп. информация:
+                                span -
+                .main-card-footer 
+                    h4.main-card-footer__title История ставок
+                    span У лота пока нет ставок, сделайте ставку, чтобы стать первым
+
+            .card-aside.card-aside--desctop
+                .card-aside__user 
+                    img.card-aside__user-pic(src="img/user.png" alt="")
+                    .card-aside__user-col
+                        h6.card-aside__user-name Иван Иванович
+                        p.card-aside__user-descr ООО «АгроКолеса»
+                    img.card-aside__user-icn(src="img/icns/ChatsCircle.svg" alt="")
+                .card-aside__content 
+                    .card-aside__block
+                        .card-aside__content-label Текущая ставка
+                        .card-aside__content-price 
+                            span 600 000 руб
+                            span (4000 руб за 1 штуку)  
+                        button.btn.btn--gradient Сделать ставку
+                    .card-aside__block
+                        .card-aside__content-label Цена выкупа
+                        .card-aside__content-price 
+                            span 675 000 руб
+                            span (4500 руб за 1 штуку)
+                        button.btn.btn--white Выкупить лот
+                    .card-aside__content-footer 
+                        span Безналичный расчет без НДС
+
+

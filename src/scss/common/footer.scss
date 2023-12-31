@@ -1,0 +1,133 @@
+.footer {
+    background-color: #fff;
+    padding: 40px 145px;
+    padding-bottom: 18px;
+    grid-area: footer;
+    @media (max-width: 1399px) {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    @media (max-width: 759px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 759px) {
+        flex-direction: column;
+    }
+}
+
+.footer__col {
+    @media (max-width: 759px) {
+        margin-bottom: 45px;
+    }
+}
+
+.footer__logo-sub {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.6;
+}
+
+.footer__link {
+    @media (max-width: 759px) {
+        font-size: 16px;
+    }
+}
+
+.footer__logo {
+    margin-bottom: 12px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 1399px) {
+        max-width: 162px;
+    }
+}
+
+.footer__nav {
+    max-width: 251px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    @media (max-width: 759px) {
+        max-width: 260px;
+    }
+}
+
+.footer__nav-item {
+    width: 50%;
+    font-size: 14px;
+}
+
+.footer__bottom {
+    display: flex;
+    @media (max-width: 1399px) {
+        flex-direction: column;
+    }
+}
+
+.footer__bottom-links {
+    display: flex;
+    gap: 35px;
+    @media (max-width: 1399px) {
+        gap: 0;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    @media (max-width: 759px) {
+        flex-direction: column;
+        gap: 14px;
+    }
+}
+
+.footer__bottom-link {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.3;
+}
+
+.footer__bottom-diz {
+    margin-left: auto;
+    max-width: 251px;
+    flex: 0 1 251px;
+    gap: 23px;
+    display: flex;
+
+    span:first-child {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: normal;
+        opacity: 0.3;
+        @media (max-width: 759px) {
+            font-size: 14px;
+        }
+    }
+
+    span:last-child {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: normal;
+        opacity: 0.8;
+        @media (max-width: 759px) {
+            font-size: 16px;
+            font-weight: 600;   
+        }
+    }
+    @media (max-width: 1399px) {
+        margin-left: 0;
+        flex: 0;
+        gap: 15px;
+        max-width: 100%;
+    }
+}

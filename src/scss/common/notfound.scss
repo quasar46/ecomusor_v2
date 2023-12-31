@@ -1,0 +1,51 @@
+.notfound {
+    min-height: 100%;
+    background-image: url("../img/404.jpg");
+    background-size: cover;
+    padding-top: 53px;
+    @media (max-width: 1399px) {
+        padding-top: 43px;
+    }
+}
+
+.notfound__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.notfound__logo {
+    margin-bottom: 140px;
+
+    @media (max-width: 1399px) {
+        margin-bottom: 300px;
+    }
+    @media (max-width: 767px) {
+        margin-bottom: 244px;
+    }
+}
+
+.notfound__title {
+    margin-bottom: 24px;
+}
+
+.subtitle__subtitle {
+    max-width: 417px;
+    margin-bottom: 50px;  
+    color: var(--color-grey-07);  
+    @media (max-width: 1399px) {
+        max-width: 293px;
+    }
+}
+
+.notfound__btn {
+    height: 74px;
+    border-radius: 6px;
+    padding: 0 52px;
+
+    @media (max-width: 1399px) {
+        height: 64px;
+    }
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+}

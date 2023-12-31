@@ -1,0 +1,109 @@
+.advantages {
+    padding-bottom: 150px;
+    @media (max-width: 1399px) {
+        padding-bottom: 78px;
+    }
+    @media (max-width: 767px) {
+        padding-bottom: 60px;
+    }
+}
+
+.advantages ._container {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 60px;
+    @media (max-width: 767px) {
+        padding-top: 0;
+    }
+}
+
+.advantages__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.advantages__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 1399px) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+    .advantages__name {
+        @media (max-width: 1399px) {
+            order: 1;
+        }
+    }
+}
+
+.advantages__name { 
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 110%;
+    @media (max-width: 1399px) {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+}
+
+.advantages__item {
+    display: flex;
+    flex-direction: column;
+    min-height: 260px;
+    border-radius: 16px;
+    border: 1px solid #F4F8FC;
+    box-shadow: 10px 10px 24px 0px rgba(219, 232, 239, 0.25);
+    padding: 30px;
+    background-color: #fff;
+}
+
+.advantages__subtitle {
+    margin-bottom: 60px;
+}
+
+.advanatges__text {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(7, 23, 13, 0.8);
+    line-height: 130%;
+    max-width: 400px;
+    margin-top: auto;
+    @media (max-width: 1399px) {
+        font-size: 15px;
+    }
+}
+
+.advantages__big-pic {
+    position: absolute;
+    left: 0;
+    height: 637px;
+    @media (max-width: 1399px) {
+        height: 341px;
+    }
+    @media (max-width: 767px) {
+        height: 343px;
+    }
+}
+
+.advantages__wrap {
+    max-width: 635px;
+    width: 100%;
+    margin-left: auto;
+    @media (max-width: 1399px) {
+        width: 305px;
+        margin-right: 50px;
+    }
+    @media (max-width: 767px) {
+        padding-top: calc(341px + 24px);
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
+.advantages__title {
+    margin-bottom: 30px;
+}

@@ -1,0 +1,452 @@
+extends templates/layout
+
+block content
+    ._container
+        ul.breadcrumb
+            li 
+                a(href="") Главная
+            li  Все аукционы
+        h1.title-page.auctions__title 
+            span Все аукционы
+            button.auctions_content-open-filter.openFilter 
+                svg(width="24" height="16")
+                    use(xlink:href="#filter-icn") 
+        .auctions 
+            .aside.auctions__aside.auctions__aside--desctop
+                .aside__block
+                    h4.aside__title Вид сделки
+                    select.mySelect
+                        option(value="") Все типы сделок
+                        option(value="") Все типы сделок
+                        option(value="") Все типы сделок
+                .aside__block
+                    h4.aside__title Тип сырья
+                    ul.aside-list
+                        li.aside-list__head
+                            input(type="checkbox" id="check1")
+                            label(for="check1") Пластики
+                        ul.aside-list__list
+                            li.aside-list__row 
+                                input(type="checkbox" id="check2")
+                                label(for="check2") Пластики
+                            li.aside-list__row 
+                                input(type="checkbox" id="check3")
+                                label(for="check3") Пластики
+                            li.aside-list__row 
+                                input(type="checkbox" id="check4")
+                                label(for="check4") Пластики
+                            li.aside-list__row 
+                                input(type="checkbox" id="check5")
+                                label(for="check5") Пластики
+                            li.aside-list__row 
+                                input(type="checkbox" id="check6")
+                                label(for="check6") Пластики
+                    ul.aside-list
+                        li.aside-list__head 
+                            input(type="checkbox" id="check7")
+                            label(for="check7") Пластики
+                        ul.aside-list__list
+                            li.aside-list__row 
+                                input(type="checkbox" id="check8")
+                                label(for="check8") Пластики
+                            li.aside-list__row 
+                                input(type="checkbox" id="check9")
+                                label(for="check9") Пластики
+                            li.aside-list__row 
+                                input(type="checkbox" id="check10")
+                                label(for="check10") Пластики
+                    ul.aside-list
+                        li.aside-list__head 
+                            input(type="checkbox" id="check11")
+                            label(for="check11") Пластики
+                        ul.aside-list__list
+                            li.aside-list__row 
+                                input(type="checkbox" id="check12")
+                                label(for="check12") Пластики
+                            li.aside-list__row 
+                                input(type="checkbox" id="check13")
+                                label(for="check13") Пластики
+                            li.aside-list__row 
+                                input(type="checkbox" id="check14")
+                                label(for="check14") Пластики
+                    ul.aside-list
+                        li.aside-list__head
+                            input(type="checkbox" id="check15")
+                            label(for="check15") Пластики
+                        ul.aside-list__list
+                            li.aside-list__row 
+                                input(type="checkbox" id="check16")
+                                label(for="check16") Пластики
+                            li.aside-list__row 
+                                input(type="checkbox" id="check17")
+                                label(for="check17") Пластики
+                            li.aside-list__row 
+                                input(type="checkbox" id="check18")
+                                label(for="check18") Пластики
+                    ul.aside-list
+                        li.aside-list__head
+                            input(type="checkbox" id="check19")
+                            label(for="check19") Пластики
+                        ul.aside-list__list
+                            li.aside-list__row 
+                                input(type="checkbox" id="check20")
+                                label(for="check20") Пластики
+                            li.aside-list__row 
+                                input(type="checkbox" id="check21")
+                                label(for="check21") Пластики
+                            li.aside-list__row 
+                                input(type="checkbox" id="check22")
+                                label(for="check22") Пластики
+                    ul.aside-list
+                        li.aside-list__head
+                            input(type="checkbox" id="check23")
+                            label(for="check23") Пластики
+                        ul.aside-list__list
+                            li.aside-list__row 
+                                input(type="checkbox" id="check24")
+                                label(for="check24") Пластики
+                            li.aside-list__row 
+                                input(type="checkbox" id="check25")
+                                label(for="check25") Пластики
+                            li.aside-list__row 
+                                input(type="checkbox" id="check26")
+                                label(for="check26") Пластики
+                    ul.aside-list
+                        li.aside-list__head
+                            input(type="checkbox" id="check27")
+                            label(for="check27") Пластики   
+                        ul.aside-list__list
+                            li.aside-list__row 
+                                input(type="checkbox" id="check28")
+                                label(for="check28") Пластики
+                            li.aside-list__row 
+                                input(type="checkbox" id="check29")
+                                label(for="check29") Пластики
+                            li.aside-list__row 
+                                input(type="checkbox" id="check30")
+                                label(for="check30") Пластики 
+                .aside__block
+                    h4.aside__title Регион
+                    select.mySelect
+                        option(value="") Выбрать регион
+                        option(value="") Выбрать регион
+                        option(value="") Выбрать регион
+                .aside__block
+                    h4.aside__title 
+                        span Вес
+                        .aside__block-btns 
+                            button.active Кг
+                            button Т
+                            button шт
+                            button м3
+                            button Л
+                    .aside__inputs
+                        input.input(type="text" placeholder="От")
+                        input.input(type="text" placeholder="До")
+                .aside__block
+                    h4.aside__title Цена, руб
+                    .aside__inputs
+                        input.input(type="text" placeholder="От")
+                        input.input(type="text" placeholder="До")
+                hr
+                .aside__footer 
+                    button.btn.btn--green Применить
+                    button.aside__reset Сбросить все
+            .auctions_content
+                .input-wrap
+                    input.input.input--search(type="text" placeholder="Введите ключевое слово")
+                    img(src="img/icns/MagnifyingGlass.svg" alt="")
+                .auctions_content__sort 
+                    span Найдено: 46
+                    button.sort-reset Очистить поиск
+                    select.mySelect 
+                        option(value="") Новые 
+                        option(value="") Новые
+                        option(value="") Новые
+                    button.auctions_content-open-filter.openFilter
+                        svg(width="24" height="16")
+                            use(xlink:href="#filter-icn") 
+
+                .aside.auctions__aside--tablet
+                    .aside__block
+                        h4.aside__title Вид сделки
+                        select.mySelect
+                            option(value="") Все типы сделок
+                            option(value="") Все типы сделок
+                            option(value="") Все типы сделок
+                    .aside__block
+                        h4.aside__title Тип сырья
+                        ul.aside-list
+                            li.aside-list__head
+                                input(type="checkbox" id="check1")
+                                label(for="check1") Пластики
+                            ul.aside-list__list
+                                li.aside-list__row 
+                                    input(type="checkbox" id="check2")
+                                    label(for="check2") Пластики
+                                li.aside-list__row 
+                                    input(type="checkbox" id="check3")
+                                    label(for="check3") Пластики
+                                li.aside-list__row 
+                                    input(type="checkbox" id="check4")
+                                    label(for="check4") Пластики
+                                li.aside-list__row 
+                                    input(type="checkbox" id="check5")
+                                    label(for="check5") Пластики
+                                li.aside-list__row 
+                                    input(type="checkbox" id="check6")
+                                    label(for="check6") Пластики
+                        ul.aside-list
+                            li.aside-list__head 
+                                input(type="checkbox" id="check7")
+                                label(for="check7") Пластики
+                            ul.aside-list__list
+                                li.aside-list__row 
+                                    input(type="checkbox" id="check8")
+                                    label(for="check8") Пластики
+                                li.aside-list__row 
+                                    input(type="checkbox" id="check9")
+                                    label(for="check9") Пластики
+                                li.aside-list__row 
+                                    input(type="checkbox" id="check10")
+                                    label(for="check10") Пластики
+                        ul.aside-list
+                            li.aside-list__head 
+                                input(type="checkbox" id="check11")
+                                label(for="check11") Пластики
+                            ul.aside-list__list
+                                li.aside-list__row 
+                                    input(type="checkbox" id="check12")
+                                    label(for="check12") Пластики
+                                li.aside-list__row 
+                                    input(type="checkbox" id="check13")
+                                    label(for="check13") Пластики
+                                li.aside-list__row 
+                                    input(type="checkbox" id="check14")
+                                    label(for="check14") Пластики
+                        ul.aside-list
+                            li.aside-list__head
+                                input(type="checkbox" id="check15")
+                                label(for="check15") Пластики
+                            ul.aside-list__list
+                                li.aside-list__row 
+                                    input(type="checkbox" id="check16")
+                                    label(for="check16") Пластики
+                                li.aside-list__row 
+                                    input(type="checkbox" id="check17")
+                                    label(for="check17") Пластики
+                                li.aside-list__row 
+                                    input(type="checkbox" id="check18")
+                                    label(for="check18") Пластики
+                        ul.aside-list
+                            li.aside-list__head
+                                input(type="checkbox" id="check19")
+                                label(for="check19") Пластики
+                            ul.aside-list__list
+                                li.aside-list__row 
+                                    input(type="checkbox" id="check20")
+                                    label(for="check20") Пластики
+                                li.aside-list__row 
+                                    input(type="checkbox" id="check21")
+                                    label(for="check21") Пластики
+                                li.aside-list__row 
+                                    input(type="checkbox" id="check22")
+                                    label(for="check22") Пластики
+                        ul.aside-list
+                            li.aside-list__head
+                                input(type="checkbox" id="check23")
+                                label(for="check23") Пластики
+                            ul.aside-list__list
+                                li.aside-list__row 
+                                    input(type="checkbox" id="check24")
+                                    label(for="check24") Пластики
+                                li.aside-list__row 
+                                    input(type="checkbox" id="check25")
+                                    label(for="check25") Пластики
+                                li.aside-list__row 
+                                    input(type="checkbox" id="check26")
+                                    label(for="check26") Пластики
+                        ul.aside-list
+                            li.aside-list__head
+                                input(type="checkbox" id="check27")
+                                label(for="check27") Пластики   
+                            ul.aside-list__list
+                                li.aside-list__row 
+                                    input(type="checkbox" id="check28")
+                                    label(for="check28") Пластики
+                                li.aside-list__row 
+                                    input(type="checkbox" id="check29")
+                                    label(for="check29") Пластики
+                                li.aside-list__row 
+                                    input(type="checkbox" id="check30")
+                                    label(for="check30") Пластики 
+                    .aside__block
+                        h4.aside__title Регион
+                        select.mySelect
+                            option(value="") Выбрать регион
+                            option(value="") Выбрать регион
+                            option(value="") Выбрать регион
+                    .aside__block
+                        h4.aside__title 
+                            span Вес
+                            .aside__block-btns 
+                                button.active Кг
+                                button Т
+                                button шт
+                                button м3
+                                button Л
+                        .aside__inputs
+                            input.input(type="text" placeholder="От")
+                            input.input(type="text" placeholder="До")
+                    .aside__block
+                        h4.aside__title Цена, руб
+                        .aside__inputs
+                            input.input(type="text" placeholder="От")
+                            input.input(type="text" placeholder="До")
+                    hr
+                    .aside__footer 
+                        button.btn.btn--green Применить
+                        button.aside__reset Сбросить все
+
+                .cards.auctions__cards
+                    .cards__inner 
+                        .card.card--mode(data-time="5 часов назад").selected
+                            svg(width="57" height="63").bookmark-icn
+                                use(xlink:href="#bookmark-icn")
+
+                            .card__content 
+                                img(src="img/card1.jpg" alt="")
+                                .card__content-block
+                                    .card__category Резина
+                                    a(href="").card__name Отходы резины / Шины, покрышки
+                            ul.card__descr 
+                                li.card__item
+                                    span Адрес:
+                                    span Московская область
+                                li.card__item 
+                                    span Количество:
+                                    span 150 шт
+                            hr
+                            .card__footer 
+                                .card__footer-col
+                                    .card__price 600 000 руб
+                                    .card__nds Без НДС
+                                ul.card__state 
+                                    li.card__state-active Идет сбор <br> заявок
+                        .card.card--mode(data-time="5 часов назад").selected
+                            svg(width="57" height="63").bookmark-icn
+                                use(xlink:href="#bookmark-icn")
+
+                            .card__content 
+                                img(src="img/card1.jpg" alt="")
+                                .card__content-block
+                                    .card__category Резина
+                                    a(href="").card__name Отходы резины / Шины, покрышки
+                            ul.card__descr 
+                                li.card__item
+                                    span Адрес:
+                                    span Московская область
+                                li.card__item 
+                                    span Количество:
+                                    span 150 шт
+                            hr
+                            .card__footer 
+                                .card__footer-col
+                                    .card__price 600 000 руб
+                                    .card__nds Без НДС
+                                ul.card__state 
+                                    li.card__state-active Идет сбор <br> заявок
+                        .card.card--mode(data-time="5 часов назад").selected
+                            svg(width="57" height="63").bookmark-icn
+                                use(xlink:href="#bookmark-icn")
+
+                            .card__content 
+                                img(src="img/card1.jpg" alt="")
+                                .card__content-block
+                                    .card__category Резина
+                                    a(href="").card__name Отходы резины / Шины, покрышки
+                            ul.card__descr 
+                                li.card__item
+                                    span Адрес:
+                                    span Московская область
+                                li.card__item 
+                                    span Количество:
+                                    span 150 шт
+                            hr
+                            .card__footer 
+                                .card__footer-col
+                                    .card__price 600 000 руб
+                                    .card__nds Без НДС
+                                ul.card__state 
+                                    li.card__state-active Идет сбор <br> заявок
+                        .card.card--mode(data-time="5 часов назад").selected
+                            svg(width="57" height="63").bookmark-icn
+                                use(xlink:href="#bookmark-icn")
+
+                            .card__content 
+                                img(src="img/card1.jpg" alt="")
+                                .card__content-block
+                                    .card__category Резина
+                                    a(href="").card__name Отходы резины / Шины, покрышки
+                            ul.card__descr 
+                                li.card__item
+                                    span Адрес:
+                                    span Московская область
+                                li.card__item 
+                                    span Количество:
+                                    span 150 шт
+                            hr
+                            .card__footer 
+                                .card__footer-col
+                                    .card__price 600 000 руб
+                                    .card__nds Без НДС
+                                ul.card__state 
+                                    li.card__state-active Идет сбор <br> заявок
+                        .card.card--mode(data-time="5 часов назад").selected
+                            svg(width="57" height="63").bookmark-icn
+                                use(xlink:href="#bookmark-icn")
+
+                            .card__content 
+                                img(src="img/card1.jpg" alt="")
+                                .card__content-block
+                                    .card__category Резина
+                                    a(href="").card__name Отходы резины / Шины, покрышки
+                            ul.card__descr 
+                                li.card__item
+                                    span Адрес:
+                                    span Московская область
+                                li.card__item 
+                                    span Количество:
+                                    span 150 шт
+                            hr
+                            .card__footer 
+                                .card__footer-col
+                                    .card__price 600 000 руб
+                                    .card__nds Без НДС
+                                ul.card__state 
+                                    li.card__state-active Идет сбор <br> заявок
+                        .card.card--mode(data-time="5 часов назад").selected
+                            svg(width="57" height="63").bookmark-icn
+                                use(xlink:href="#bookmark-icn")
+
+                            .card__content 
+                                img(src="img/card1.jpg" alt="")
+                                .card__content-block
+                                    .card__category Резина
+                                    a(href="").card__name Отходы резины / Шины, покрышки
+                            ul.card__descr 
+                                li.card__item
+                                    span Адрес:
+                                    span Московская область
+                                li.card__item 
+                                    span Количество:
+                                    span 150 шт
+                            hr
+                            .card__footer 
+                                .card__footer-col
+                                    .card__price 600 000 руб
+                                    .card__nds Без НДС
+                                ul.card__state 
+                                    li.card__state-active Идет сбор <br> заявок
+
+                    button.btn.btn--white.card__show-more Показать ещё

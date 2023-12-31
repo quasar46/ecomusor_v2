@@ -1,0 +1,137 @@
+// @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;600;800&family=Inter&display=swap');
+
+
+:root {
+    --color-grey-08: rgba(7, 23, 13, 0.8);
+    --color-white-08: rgba(255,255,255,0.8);
+    --color-white-04: rgba(255,255,255,0.4);
+    --color-grey-02: rgba(7, 23, 13, 0.2);
+    --color-grey-03: rgba(7, 23, 13, 0.3);
+    --color-grey-05: rgba(7, 23, 13, 0.5);
+    --color-grey-07: rgba(7, 23, 13, 0.7);
+    --color-gre-08: rgba(7, 23, 13, 68);
+}   
+
+*,
+*::before,
+*::after {
+    border: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Commissioner', sans-serif;
+    color: #07170D;
+    background-color: #F8FAFB;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    overflow-x: hidden;
+    &.hidden {
+        overflow: hidden;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #07170D;
+}
+
+p {
+    margin: 0 0 20px 0;
+    line-height: 140%;
+    font-size: 18px;
+    @media (max-width: 1399px) {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+.figure {
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+section {
+    margin-bottom: 130px;
+    @media (max-width: 1399px) {
+        margin-bottom: 70px;
+    }
+    @media (max-width: 767px) {
+        margin-bottom: 50px;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+._container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    @media (max-width: 767px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.vectors {
+    display: none;
+}
+
+hr {
+    height: 1px;
+    background-color: #F5F5F5;
+    margin: 20px 0;
+    @media (max-width: 1399px) {
+        margin: 10px 0;
+    }
+}
+
+#topscroll {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: 2px solid #0DBA48;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    cursor: pointer;
+}

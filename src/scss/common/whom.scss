@@ -1,0 +1,122 @@
+.whom {
+    background-color: #F4F7F8;
+    border-radius: 32px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-left: 15px;
+    margin-right: 15px;
+    @media (max-width: 1366px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    @media (max-width: 767px) {
+        padding-top: 30px;
+        padding-bottom: 8px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    ._container {
+        @media (max-width: 767px) {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+    }
+}
+
+.whom__title {
+    margin-bottom: 50px;
+    @media (max-width: 767px) {
+        padding-left: 20px;
+    }
+}
+
+.whom__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    @media (max-width: 1399px) {
+        grid-gap: 20px;
+    }
+    @media (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.whom__item {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 32px;
+    &:last-child {
+        background-color: #E4F1F9;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .whom__name {
+            margin-bottom: 20px;
+            font-size: 28px;
+            @media (max-width: 1399px) {
+                font-size: 22px;
+            }
+        }
+        .whom__text {
+            margin-bottom: 40px;
+        }
+        .btn {
+            height: 64px;
+            border-radius: 16px;
+            margin: 0 auto;
+            font-size: 16px;
+            padding: 0 50px;
+        }
+        @media (max-width: 767px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    }
+    @media (max-width: 767px) {
+        padding: 13px;
+        padding-bottom: 30px;
+        min-height: 370px;
+    }
+}
+
+.whom__content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.whom__pic {
+    margin-bottom: 20px;
+    height: 227px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    @media (max-width: 1399px) {
+        height: 120px;
+    }
+}
+
+.whom__name {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 110%;
+    margin-bottom: 12px;
+}
+
+.whom__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 130%;
+    color: rgba(7, 23, 13, 0.8);
+    @media (max-width: 1399px) {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,53 @@
+.registr2 {
+    padding: 90px 0;
+    background-color: #E4F1F9;
+    background-image: url("../img/basket12.svg"), url("../img/basket34.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left bottom, right bottom;
+    margin-bottom: 160px;
+    @media (max-width: 1399px) {
+        background-image: url("../img/basket4.svg"), url("../img/basket1.svg");
+        padding-top: 43px;
+        padding-bottom: 37px;
+        background-size: auto 100%, auto 100%;
+        margin-bottom: 70px;
+    }
+    @media (max-width: 767px) {
+        background-image: url("../img/basket123.svg");
+        background-size: contain;
+        background-position: center bottom;
+        padding-bottom: 260px;
+    }
+}
+
+.registr2__wrap {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    .btn {
+        height: 64px;
+        border-radius: 16px;
+        align-self: center;
+    }
+}
+
+.registr2__title {
+    margin-bottom: 30px;
+    @media (max-width: 1399px) {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+}
+
+.registr2__subtitle {
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: rgba(7, 23, 13, 0.8);
+    line-height: 130%;
+    @media (max-width: 1399px) {
+        font-size: 15px;
+    }
+    @media (max-width: 767px) {
+        margin-bottom: 30px;
+    }
+}

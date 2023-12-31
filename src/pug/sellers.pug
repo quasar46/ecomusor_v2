@@ -1,0 +1,131 @@
+extends templates/layout
+
+block content
+
+    .banner__mode-wrap
+        ._container
+            ul.breadcrumb
+                li 
+                    a Главная
+                li Продавцам
+            .banner__mode-wrap-block
+                .banner__mode-wrap-content
+                    h1.title-page.banner__title Найдите надежных утилизаторов вашего вторсырья
+                    h4.subtitle.banner__subtitle Мы объединяем всех участников отрасли по обращению и переработки отходов, что бы создать более устойчивое будущее экологии нашей странны
+                    button.btn.btn--gradient Найти покупателей
+                .banner__pic 
+                    img(src="img/banner2.svg" alt="")
+
+    section.advantages3
+        ._container
+            h2.title-block Преимущества использования нашей платформы:
+            .advantages3__wrap
+                .advantages3__item 
+                    .advantages3__block 
+                        img.advantages3__pic(src="img/svg-gobbler2023-041T005948.073.svg") 
+                        h4.advantages3__name Продавайте вторсырье дороже
+                        p.advantages3__text Мы считаем, что ваши вторсырья должны продаваться по наилучшей возможной цене. Вот почему у нас есть конкурентный формат аукциона, который гарантирует, что вы получите самую высокую цену за свою продукцию.
+                    .advantages3__block
+                        img.advantages3__pic(src="img/svg-gobbler - 2023-04-11T005942.083.svg" alt="")
+                        h4.advantages3__name Безопасные транзакции
+                        p.advantages3__text Мы предлагаем 100% гарантию возврата денег, чтобы гарантировать, что вы получите оплату за ваши вторсырья. Покупатель вносит предоплату на нашу платформу, поэтому вы можете быть уверены, что не столкнётесь с рисками неуплаты.
+                    .advantages3__block
+                        img.advantages3__pic(src="img/svg-gobbler - 2023-04-11T005939.226.svg" alt="")
+                        h4.advantages3__name Полный контроль и аналитика
+                        p.advantages3__text Предоставляет вам возможность контролировать все транзакции филиалов и связанных компаний, а также предлагает всю необходимую аналитику, которая поможет вам принимать взвешенные решения.
+                    .advantages3__block
+                        img.advantages3__pic(src="img/Frame.svg" alt="")
+                        h4.advantages3__name Утилизаторы в рамках РОП
+                        p.advantages3__text Найдите самого надёжного утилизатора с лицензией на утилизацию с Вашим видом отхода по самой выгодной цене в соответствии с ФЗ 458
+                .advanatages3__item 
+                    img.advantages3__pic(src="img/Iphone14GhostedMockup02_MicroVolume.png")
+                    .advanatages3__item-footer
+                        h4.advantages3__name Прямая связь с покупателями
+                        p.advantages3__text Наша платформа напрямую связывает вас с потенциальными покупателями, делая процесс продажи быстрее и эффективнее. Вы можете легко создать аукцион для вторсырья и получать предложения от заинтересованных покупателей.
+
+
+    section.how-work2
+        ._container
+            .how-work2__head 
+                h2.title-block Как это работает
+                p.subtitle Хотите продать вторсырьё по лучшей цене? Вот как вы можете использовать «название компании» для этого:
+            .how-work2__wrap
+                .how-work2__item
+                    .how-work2__pic
+                        img(src="img/Rectangle6.png" alt="") 
+                        .how-work2__count 01
+                    h4.how-work2__name Разместите аукцион
+                    p.how-work2__text Это быстрый и простой процесс, и вы можете установить свою обычную цену в качестве начальной ставки
+                .how-work2__item
+                    .how-work2__pic
+                        img(src="img/Rectangle6.png" alt="") 
+                        .how-work2__count 02
+                    h4.how-work2__name Авто рассылка
+                    p.how-work2__text Мы разошлем ваше предложение по всей базе благодаря чему ваше предложение будет видно более широкой аудитории
+                .how-work2__item
+                    .how-work2__pic
+                        img(src="img/Rectangle6.png" alt="") 
+                        .how-work2__count 03
+                    h4.how-work2__name Постоянные клиенты
+                    p.how-work2__text Вы можете отправить ссылку своим постоянным клиентам. Это может побудить их предложить более высокую цену за ваши вторсырья.
+                .how-work2__item
+                    .how-work2__pic
+                        img(src="img/Rectangle6.png" alt="") 
+                        .how-work2__count 04
+                    h4.how-work2__name Время ставок
+                    p.how-work2__text Подождите, пока потенциальные покупатели сделают свои ставки на аукционе. Покупатель, предложивший самую высокую цену, побеждает, что дает вам лучшее предложение по вторсырью.
+
+
+    section.questions 
+        ._container 
+            .questions__wrap 
+                .questions__col
+                    h2.title-block.questions__title Часто задаваемые вопросы
+                    a.btn(href="") Задать свой вопрос
+                .questions__col
+                    .accordion-wrap
+                        .accordion__head 
+                            h4.accordion__item-name Необходимо готовить всю тендерную документацию?
+                            .accordion__item-close 
+                                img(src="img/icns/pluscircle.svg" alt="")
+                        .accordion__panel 
+                            p.accordion__text Нет, такая ситуация невозможна. При публикации объявления вы указываете минимальную цену лота. Если вы обычно продаете...
+                    .accordion-wrap 
+                        .accordion__head 
+                            h4.accordion__item-name Необходимо готовить всю тендерную документацию?
+                            .accordion__item-close 
+                                img(src="img/icns/pluscircle.svg" alt="")
+                        .accordion__panel 
+                            p.accordion__text Нет, такая ситуация невозможна. При публикации объявления вы указываете минимальную цену лота. Если вы обычно продаете...
+                    .accordion-wrap 
+                        .accordion__head 
+                            h4.accordion__item-name Необходимо готовить всю тендерную документацию?
+                            .accordion__item-close 
+                                img(src="img/icns/pluscircle.svg" alt="")
+                        .accordion__panel 
+                            p.accordion__text Нет, такая ситуация невозможна. При публикации объявления вы указываете минимальную цену лота. Если вы обычно продаете...
+                    .accordion-wrap 
+                        .accordion__head 
+                            h4.accordion__item-name Необходимо готовить всю тендерную документацию?
+                            .accordion__item-close 
+                                img(src="img/icns/pluscircle.svg" alt="")
+                        .accordion__panel 
+                            p.accordion__text Нет, такая ситуация невозможна. При публикации объявления вы указываете минимальную цену лота. Если вы обычно продаете...
+                    .accordion-wrap 
+                        .accordion__head 
+                            h4.accordion__item-name Необходимо готовить всю тендерную документацию?
+                            .accordion__item-close 
+                                img(src="img/icns/pluscircle.svg" alt="")
+                        .accordion__panel 
+                            p.accordion__text Нет, такая ситуация невозможна. При публикации объявления вы указываете минимальную цену лота. Если вы обычно продаете...
+                    .accordion-wrap 
+                        .accordion__head 
+                            h4.accordion__item-name Необходимо готовить всю тендерную документацию?
+                            .accordion__item-close 
+                                img(src="img/icns/pluscircle.svg" alt="")
+                        .accordion__panel 
+                            p.accordion__text Нет, такая ситуация невозможна. При публикации объявления вы указываете минимальную цену лота. Если вы обычно продаете...
+    section.green-block 
+        h2.title-block.green-block__title Готовы продать вторсырьё по лучшей цене?
+        p.subtitle Зарегистрируйтесь на «Чистая Земля» сегодня и начните создавать аукционы
+        a.btn.btn--white Зарегистрироваться

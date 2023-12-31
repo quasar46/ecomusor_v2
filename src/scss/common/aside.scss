@@ -1,0 +1,109 @@
+.aside {
+    // position: sticky;
+    // top: 50px;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 10px 10px 24px 0px rgba(219, 232, 239, 0.25);
+    padding: 40px 30px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    .btn {
+        width: 100%;
+    }
+    @media (max-width: 1399px) {
+        position: static;
+    }
+}
+
+.aside__reset {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0;
+    background-color: transparent;
+    color: var(--color-grey-03);
+    cursor: pointer;
+}
+
+.aside__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.aside__title {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 110%;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aside__block-btns {
+    display: flex;
+    gap: 20px;
+    button {
+        font-size: 14px;
+        padding: 0;
+        background-color: transparent;
+        cursor: pointer;
+        &.active {
+            font-weight: 600;
+            color: #009B51;
+            text-decoration: underline;
+        }
+    }
+}
+
+.aside-list {
+    margin: 0;
+    margin-bottom: 10px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.aside-list__head  {
+    position: relative;
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 14px;
+    &::after {
+        content:"";
+        position: absolute;
+        background-image: url("../img/icns/arrow-down.svg");
+        background-repeat: no-repeat;
+        width: 12px;
+        height: 12px;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+}
+
+.aside-list__list {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 16px;
+    &.show {
+        display: flex;
+    }
+    label::before {
+        width: 14px !important;
+        height: 14px !important;
+    }
+}
+
+.aside-list__row {
+    font-size: 13px;
+}
+
+.aside__inputs {
+    display: flex;
+    gap: 9px;
+}

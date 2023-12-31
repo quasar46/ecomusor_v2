@@ -1,0 +1,123 @@
+extends templates/layout
+
+block content
+
+    .banner__mode-wrap
+        ._container
+            ul.breadcrumb
+                li 
+                    a Главная
+                li Покупателям
+            .banner__mode-wrap-block
+                .banner__mode-wrap-content
+                    h1.title-page.banner__title Получите необходимое количество вторсырья
+                    h4.subtitle.banner__subtitle Наша задача проекта — помочь покупателям и продавцам найти друг друга, а также сопроводить их сделку по передаче товара
+                    button.btn.btn--gradient Найти покупателей
+                .banner__pic 
+                    img(src="img/banner3.svg" alt="")
+
+    section.advantages3
+        ._container
+            h2.title-block Преимущества для покупателей
+            .advantages3__wrap.advantages3__wrap--2
+                .advantages3__item.advantages3__item--2
+                    .advantages3__block 
+                        img.advantages3__pic(src="img/svg-gobbler - 2023-04-11T051812.730.svg") 
+                        h4.advantages3__name Получите лучшие предложения на вторичное сырьё
+                        p.advantages3__text Наша платформа предоставляет покупателям торговую площадку для покупки вторичного сырья по конкурентоспособной цене, что позволяет сэкономить средства и увеличить прибыль.
+                    .advantages3__block
+                        img.advantages3__pic(src="img/svg-gobbler - 2023-04-11T051809.969.svg" alt="")
+                        h4.advantages3__name Надёжные и стабильные поставки
+                        p.advantages3__text Мы понимаем важность своевременных и стабильных поставок для наших покупателей, и мы стремимся к тому, чтобы они получали регулярные поставки приобретённого ими вторсырья.
+                    .advantages3__block 
+                        img.advantages3__pic(src="img/svg-gobbler - 2023-04-11T051807.104.svg")
+                        h4.advantages3__name Проверенные поставщики
+                        p.advantages3__text Работаем только с проверенными поставщиками, гарантируя, что покупатели получают вторсырьё высочайшего качества и снижая риск приобретения некачественных материалов.
+                    
+
+    section.how-work2
+        ._container
+            .how-work2__head 
+                h2.title-block Как это работает
+                p.subtitle Хотите продать вторсырьё по лучшей цене? Вот как вы можете использовать «название компании» для этого:
+            .how-work2__wrap
+                .how-work2__item
+                    .how-work2__pic
+                        img(src="img/Rectangle6.png" alt="") 
+                        .how-work2__count 01
+                    h4.how-work2__name Поиск лучшего преложения
+                    p.how-work2__text Найдите типы вторсырья, которые вам нужны, и подпишитесь на соответствующие категории в вашем регионе
+                .how-work2__item
+                    .how-work2__pic
+                        img(src="img/Rectangle6.png" alt="") 
+                        .how-work2__count 02
+                    h4.how-work2__name Ожидание уведомления
+                    p.how-work2__text Наша платформа будет отправлять вам актуальные и проверенные предложения о продаже вторсырья по телефону или электронной почте.
+                .how-work2__item
+                    .how-work2__pic
+                        img(src="img/Rectangle6.png" alt="") 
+                        .how-work2__count 03
+                    h4.how-work2__name Прямые переговоры
+                    p.how-work2__text Ведите переговоры напрямую с продавцами и делайте предложения в зависимости от вашего бюджета и потребностей.
+                .how-work2__item
+                    .how-work2__pic
+                        img(src="img/Rectangle6.png" alt="") 
+                        .how-work2__count 04
+                    h4.how-work2__name Безопасные транзакции
+                    p.how-work2__text Наша платформа обеспечивает безопасность транзакций и предлагает лучший способ обойти точки заключённых сделок, чтобы вы могли быть спокойны при покупке вторсырья
+
+
+    section.questions 
+        ._container 
+            .questions__wrap 
+                .questions__col
+                    h2.title-block.questions__title Часто задаваемые вопросы
+                    p.subtitle Вы можете найти ответ среди представленных вопросов или задать свой
+                    a.btn(href="") Задать свой вопрос
+                .questions__col
+                    .accordion-wrap
+                        .accordion__head 
+                            h4.accordion__item-name Необходимо готовить всю тендерную документацию?
+                            .accordion__item-close 
+                                img(src="img/icns/pluscircle.svg" alt="")
+                        .accordion__panel 
+                            p.accordion__text Нет, такая ситуация невозможна. При публикации объявления вы указываете минимальную цену лота. Если вы обычно продаете...
+                    .accordion-wrap 
+                        .accordion__head 
+                            h4.accordion__item-name Необходимо готовить всю тендерную документацию?
+                            .accordion__item-close 
+                                img(src="img/icns/pluscircle.svg" alt="")
+                        .accordion__panel 
+                            p.accordion__text Нет, такая ситуация невозможна. При публикации объявления вы указываете минимальную цену лота. Если вы обычно продаете...
+                    .accordion-wrap 
+                        .accordion__head 
+                            h4.accordion__item-name Необходимо готовить всю тендерную документацию?
+                            .accordion__item-close 
+                                img(src="img/icns/pluscircle.svg" alt="")
+                        .accordion__panel 
+                            p.accordion__text Нет, такая ситуация невозможна. При публикации объявления вы указываете минимальную цену лота. Если вы обычно продаете...
+                    .accordion-wrap 
+                        .accordion__head 
+                            h4.accordion__item-name Необходимо готовить всю тендерную документацию?
+                            .accordion__item-close 
+                                img(src="img/icns/pluscircle.svg" alt="")
+                        .accordion__panel 
+                            p.accordion__text Нет, такая ситуация невозможна. При публикации объявления вы указываете минимальную цену лота. Если вы обычно продаете...
+                    .accordion-wrap 
+                        .accordion__head 
+                            h4.accordion__item-name Необходимо готовить всю тендерную документацию?
+                            .accordion__item-close 
+                                img(src="img/icns/pluscircle.svg" alt="")
+                        .accordion__panel 
+                            p.accordion__text Нет, такая ситуация невозможна. При публикации объявления вы указываете минимальную цену лота. Если вы обычно продаете...
+                    .accordion-wrap 
+                        .accordion__head 
+                            h4.accordion__item-name Необходимо готовить всю тендерную документацию?
+                            .accordion__item-close 
+                                img(src="img/icns/pluscircle.svg" alt="")
+                        .accordion__panel 
+                            p.accordion__text Нет, такая ситуация невозможна. При публикации объявления вы указываете минимальную цену лота. Если вы обычно продаете...
+    section.green-block 
+        h2.title-block.green-block__title Начать покупать
+        p.subtitle Зарегистрируйтесь на «Чистая Земля» сегодня и найдите своего лучшего поставщика
+        a.btn.btn--white Зарегистрироваться

@@ -1,0 +1,201 @@
+.main-card-wrap {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    grid-gap: 30px;
+    align-items: flex-start;
+    padding-bottom: 120px;
+    @media (max-width: 1399px) {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 100px;
+    }
+    @media (max-width: 767px) {
+        padding-bottom: 40px;
+    }
+}
+
+.main-card {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    @media (max-width: 1399px) {
+        // flex-direction: row;
+    }
+}
+
+.main-card .bookmark-icn {
+    position: absolute;
+    top: -13px;
+    right: 20px;
+}
+
+.main-card-block {
+    position: relative;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 16px;
+
+    &.selected {
+        .bookmark-icn {
+            --icon-color-favorite: #FBE362;
+        }
+    }
+
+    &::before {
+        content: attr(data-time);
+        position: absolute;
+        left: 0;
+        top: 15px;
+        height: 26px;
+        color: #69746E;
+        font-family: 'Inter', sans-serif;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 130%;
+        background-color: rgba(240, 250, 255, 0.77);
+        border-radius: 0px 6px 6px 0px;
+        backdrop-filter: blur(7.5px);
+        padding: 0 12px;
+        display: flex;
+        align-items: center;
+
+    }
+    @media (max-width: 1399px) {
+        padding: 0;
+        background-color: transparent;
+    }
+}
+
+.main-card__pic {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 25px;
+}
+
+.main-card__head {
+    display: flex;
+    grid-gap: 35px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    @media (max-width: 1399px) {
+        flex-direction: column;
+    }
+    @media (max-width: 767px) {
+        margin-bottom: 0;
+    }
+}
+
+.main-card__head-col {
+    &:first-child {
+        max-width: 430px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        @media (max-width: 1399px) {
+            order: 1;
+        }
+    }
+}
+
+.main-card__name {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 110%;
+    margin-bottom: 15px;
+}
+
+.main-card__head-list {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: right;
+    @media (max-width: 1399px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.main-card__head-list__item:first-child {
+    position: relative;
+    white-space: nowrap;
+    padding-left: 10px;
+
+    &.active {
+        color: #009B51;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: #009B51;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.main-card__head-list__item:nth-child(2) {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-grey-03);
+}
+
+.main-card__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+    color: var(--color-grey-07);
+}
+
+.main-card-footer {
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 16px;
+
+    span {
+        font-size: 14px;
+        line-height: 130%;
+        color: var(--color-grey-05);
+    }
+    @media (max-width: 767px) {
+        padding: 30px 36px;
+    }
+}
+
+.main-card-footer__title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 130%;
+    margin-bottom: 10px;
+}
+
+.main-card__inner {
+    .card-aside {
+        display: none;
+        @media (max-width: 1399px) {
+            display: flex;
+        }
+    }
+    // @media (max-width: 1399px) {
+    //     display: grid;
+    //     grid-template-columns: 1fr 350px;
+    //     grid-gap :25px;
+    // }
+}
+
+.main-card__box {
+    @media (max-width: 1399px) {
+        display: grid;
+        grid-template-columns: 1fr 350px;
+        grid-gap: 25px;
+    }
+    @media (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,81 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet" href="css/style.min.css")
+    body 
+        .auth 
+            .auth__header
+                a.logo.auth__logo(href="") 
+                    img(src="img/logo-white.svg" alt="")
+                h2.auth__title Измените свое управление отходами 
+                .auth__footer-link.auth__footer-link--desctop 
+                    a(href="") © 2023, Все права защищены
+                    a(href="") Политика конфиденциальности
+                    a(href="") Задать вопрос
+            .auth__content 
+                h1.auth__content-tile Регистрация
+                form.auth__form.auth__form--registr
+                    ul.auth__list 
+                        li.auth__item.auth__item--phone
+                            .auth__item 
+                                label(for="") Телефон
+                                input.input(type="text" placeholder="+7 (999) 999 99 99")
+                            .auth__item 
+                                label.auth__item-label-empty label
+                                button.btn.btn--grey Подтвердить
+                        li.auth__item
+                            label(for="") Почта
+                            input.input(type="text" placeholder="@")
+                        li.auth__item 
+                            label(for="") ФИО
+                            input.input(type="text" placeholder="Иванов Иван Иванович")
+                        li.auth__item.auth__item--50
+                            .auth__item
+                                label(for="") Пароль
+                                .auth__item--icn
+                                    input.input(type="password" placeholder="****")
+                            .auth__item
+                                label(for="") Повторите пароль
+                                .auth__item--icn 
+                                    input.input(type="password" placeholder="****")
+                        li.auth__item.auth__item--radio
+                            input(type="radio" name="type" id="type1" checked)
+                            label(for="type1" ) Юр. лицо
+                            input(type="radio" name="type" id="type2")
+                            label(for="type2" ) ИП
+                            input(type="radio" name="type" id="type3")
+                            label(for="type3" ) Частное лицо
+                        li.auth__item
+                            label(for="") Название компании или ИНН
+                            input.input(type="text" placeholder="Иванов Иван Иванович")
+                        li.auth__item 
+                            label(for="") Загрузить скан-копию
+                            .auth__item__row
+                                button.btn.btn--grey Добавить файл
+                                span Можно загрузить сканированный документ в формате: jpg, jpeg, png, svg, webp.
+                        li.auth__item 
+                            label(for="") Роль пользователя
+                        li.auth__item.auth__item--radio
+                            input(type="checkbox" name="type" id="type1" checked)
+                            label(for="type1" ) Продавец
+                            input(type="checkbox" name="type" id="type2")
+                            label(for="type1" ) Покупатель
+                        hr
+                        li.auth__item.auth__item--grey
+                            input(type="checkbox" id="check4" checked)
+                            label(for="check4" ) Подтверждаю, что прочитал и соглашаюсь с правовыми документами
+                            input(type="checkbox" id="check5")
+                            label(for="check5" ) Соглашаюсь получать рассылку / уведомления
+
+                    .auth__footer
+                        button.btn.btn--gradient(type="submit") Зарегистрироваться
+                        a.auth__link(href="") Войти 
+                .auth__footer-link.auth__footer-link--mobile 
+                    a(href="") © 2023, Все права защищены
+                    a(href="") Политика конфиденциальности
+                    a(href="") Задать вопрос
+
+    script(src="js/main.js")

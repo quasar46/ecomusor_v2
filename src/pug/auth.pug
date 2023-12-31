@@ -1,0 +1,60 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="css/style.min.css")
+    body 
+        .auth 
+            .auth__header
+                a.logo.auth__logo(href="") 
+                    img(src="img/logo-white.svg", alt="")
+                h2.auth__title Измените свое управление отходами 
+                .auth__footer-link.auth__footer-link--desctop 
+                    a(href="") © 2023, Все права защищены
+                    a(href="") Политика конфиденциальности
+                    a(href="") Задать вопрос
+            .auth__content 
+                h1.auth__content-tile Вход в личный кабинете
+                form.auth__form
+                    .auth__tabs 
+                        .auth__tabs-header.tabs
+                            .auth__tabs-btn.tabs__head 
+                                button.tabs__head-btn.active Телефон
+                                button.tabs__head-btn Почта
+                            .auth__tabs-content.tabs__content 
+                                ul.auth__list 
+                                    li.auth__item 
+                                        label(for="") Телефон
+                                        input.input(type="text" placeholder="+7 (999) 999 99 99")
+                                    li.auth__item 
+                                        label(for="") Пароль
+                                        .auth__item--icn
+                                            input.input(type="password" placeholder="****")
+                                    li.auth__item.auth__item--pass
+                                        input(type="checkbox" id="check1")
+                                        label(for="check1") Запомнить меня
+                                        a(href="") Забыли пароль?
+                            .auth__tabs-content.tabs__content
+                                ul.auth__list 
+                                    li.auth__item 
+                                        label(for="") Почта
+                                        input.input(type="text" placeholder="")
+                                    li.auth__item 
+                                        label(for="") Пароль
+                                        .auth__item--icn
+                                            input.input(type="password" placeholder="****")
+                                    li.auth__item.auth__item--pass
+                                        input(type="checkbox" id="check1")
+                                        label(for="check1") Запомнить меня
+                                        a(href="") Забыли пароль?
+                    .auth__footer 
+                        button.btn.btn--gradient(type="submit") Войти
+                        a.auth__link(href="") Зарегистрироваться 
+                .auth__footer-link.auth__footer-link--mobile 
+                    a(href="") © 2023, Все права защищены
+                    a(href="") Политика конфиденциальности
+                    a(href="") Задать вопрос
+
+    script(src="js/main.js")

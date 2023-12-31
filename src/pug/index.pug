@@ -1,0 +1,527 @@
+extends templates/layout
+
+block content
+    .banner 
+        ._container
+            .banner__wrap
+                .banner__content
+                    h1.title-page.banner__title Измените свое управление отходами с помощью Ecomusor
+                    h4.subtitle.banner__subtitle Наша платформа объединяет игроков отрасли обращения с отходами, предоставляя единую торговую площадку производителям и утилизаторам
+                    form.banner__form.banner__form--desctop(action="")
+                        .banner__input
+                            input(type="text" placeholder="Введите ключевое слово") 
+                            img(src="img/icns/MagnifyingGlass.svg", alt="" width="24" height="24")
+                        .banner__chips 
+                            .banner__chips-item Макулатура
+                            .banner__chips-item Пластик
+                            .banner__chips-item Металлы
+                            .banner__chips-item Стекло
+                            .banner__chips-item Строительные материалы
+                .banner__pic 
+                    img(src="img/banner1.png" alt="")
+                form.banner__form.banner__form--mobile(action="")
+                        .banner__input
+                            input(type="text" placeholder="Введите ключевое слово") 
+                            img(src="img/icns/MagnifyingGlass.svg", alt="" width="24" height="24")
+                        .banner__chips 
+                            .banner__chips-item Макулатура
+                            .banner__chips-item Пластик
+                            .banner__chips-item Металлы
+                            .banner__chips-item Стекло
+                            .banner__chips-item Строительные материалы
+
+    .advantages
+        ._container
+            img.advantages__big-pic(src="img/Group645.png" alt="")
+            .advantages__wrap
+                h2.title-block.advantages__title Надёжная площадка для закупок и продажи
+                .subtitle-block.advantages__subtitle 
+                    p Присоединяйтесь к нашей платформе сегодня и наслаждайтесь преимуществами прозрачности транзакций как для продавцов, так и для покупателей. 
+                    p Наша платформа предлагает интегрированную систему электронного документооборота с возможностью безбумажного обмена документами.
+                .advantages__content 
+                    .advantages__item
+                        .advantages__head
+                            h4.advantages__name Безопасные и надёжные транзакции
+                            img.advantages__pic(src="img/icns/svg-gobbler - 2023-04-04T102157.295.svg" alt="")
+                        p.advanatges__text Наша платформа гарантирует безопасность и надёжность всех транзакций, а также принимает меры для защиты ваших данных от несанкционированного доступа
+                    .advantages__item
+                        .advantages__head
+                            h4.advantages__name Экономия затрат
+                            img.advantages__pic(src="img/icns/svg-gobbler - 2023-04-04T102202.140.svg" alt="")
+                        p.advanatges__text Используя нашу платформу, вы можете сэкономить деньги на бумажных транзакциях, таких как расходы на печать, хранение и доставку
+                    .advantages__item
+                        .advantages__head
+                            h4.advantages__name Лёгкий доступ к рыночной информации
+                            img.advantages__pic(src="img/icns/svg-gobbler - 2023-04-04T102159.692.svg" alt="")
+                        p.advanatges__text Получая доступ к данным в режиме реального времени о ценах, уровне запасов и тенденциях
+
+    .whom 
+        ._container 
+            h2.title-block.whom__title Для кого
+            .whom__wrapper 
+                .whom__item
+                    img.whom__pic(src="img/Rectangle6.jpg" alt="")
+                    .whom__content
+                        h4.whom__name Покупателям
+                        p.whom__text Покупайте вторсырьё на выгодных условиях, с гарантией безопасной сделки
+                        a.link-next(href="") 
+                            span Подробнее
+                            svg(width="13" height="13") 
+                                use(xlink:href="#arrow-right-icn2")
+                .whom__item
+                    img.whom__pic(src="img/Rectangle61.jpg" alt="")
+                    .whom__content
+                        h4.whom__name Утилизаторам
+                        p.whom__text Находите отходобразователей для оказания услуг в рамках РОП, а так же пополняйте сырьевые запасы на выгодных условиях
+                        a.link-next(href="") 
+                            span Подробнее
+                            svg(width="13" height="13") 
+                                use(xlink:href="#arrow-right-icn2")
+                .whom__item
+                    img.whom__pic(src="img/Rectangl62.jpg" alt="")
+                    .whom__content
+                        h4.whom__name Продавцам
+                        p.whom__text Продавайте вторсырьё только проверенным контрагентам на выгодных условиях
+                        a.link-next(href="") 
+                            span Подробнее
+                            svg(width="13" height="13") 
+                                use(xlink:href="#arrow-right-icn2")
+                .whom__item
+                    .whom__content
+                        h4.whom__name Наш сервис позволит <br> вам управлять отходами проще <br> и эффективнее
+                        p.whom__text Регистрируйтесь на сайте и начните <br> изменения уже сегодня!
+                        button.btn.btn--gradient Зарегистрироваться
+
+    .information 
+        ._container 
+            .information__head 
+                h2.title-block.information__title Что нужно знать о правилах РОП
+                .subtitle-block Система расширенной ответственности производителей в России требует, чтобы производители и импортёры брали на себя ответственность за управление своей продукцией в конце её срока службы
+            .information__wrapper
+                .information__content 
+                    .information__item
+                        h4.information__name Экономические и экологические преимущества
+                        p.information__text Внедряя методы устойчивого управления отходами, компании могут сократить расходы, улучшить репутацию бренда и внести свой вклад в сохранение окружающей среды
+                    .information__item
+                        h4.information__name Правила и обязательства РОП
+                        p.information__text Согласно правилам РОП, производители и импортёры в России обязаны соблюдать систему РОП и брать на себя ответственность за управление своей продукцией по окончании срока службы. Несоблюдение может привести к юридическим санкциям, штрафам и ущербу для репутации.
+                    .information__item
+                        h4.information__name Устойчивое управление отходами
+                        p.information__text Соблюдая правила РОП, вы можете внести свой вклад в практику устойчивого управления отходами, снизить нагрузку на местные органы власти и потребителей, а также продвигать экономику замкнутого цикла и устойчивый рост
+    .information-last._container 
+        .information-last__wrap
+            .information__item-head
+                h4.information__name Соответствующие Федеральные законы <br> о соблюдении РОП в России
+                img(src="img/icns/Frame.svg" alt="")
+            .swiper-wrap
+                .swiper.swiper-information.swiper-information--desctop
+                    .swiper-pagination
+                    .swiper-wrapper.information__item-footer
+                        .swiper-slide.information__item-block
+                            h5.information__item-block-name Федеральный закон №89
+                            p.information__item-block-text Определяет правовые основы обращения с отходами производства и потребления в целях предотвращения вредного воздействия отходов производства и потребления на здоровье человека и окружающую среду, а также вовлечения таких отходов в хозяйственный оборот в качестве дополнительных источников сырья.
+                            a.link-next.link-next--tablet(href="") 
+                                span Подробнее
+                                svg(width="13" height="13") 
+                                    use(xlink:href="#arrow-right-icn2")
+                        .swiper-slide.information__item-block
+                            h5.information__item-block-name Федеральный закон №458
+                            p.information__item-block-text О внесении изменений в Федеральный закон «Об отходах производства и потребления», отдельные законодательные акты Российской Федерации и признании утратившими силу отдельных законодательных актов
+                            a.link-next.link-next--tablet(href="") 
+                                span Подробнее
+                                svg(width="13" height="13") 
+                                    use(xlink:href="#arrow-right-icn2")
+                        .swiper-slide.information__item-block
+                            h5.information__item-block-name Федеральный закон №195
+                            p.information__item-block-text Несоблюдение требований в области охраны окружающей среды при обращении с отходами производства и потребления
+                            a.link-next.link-next--tablet(href="") 
+                                span Подробнее
+                                svg(width="13" height="13") 
+                                    use(xlink:href="#arrow-right-icn2")
+                .swiper.swiper-information.swiper-information--tablet
+                    .swiper-pagination
+                    .swiper-wrapper.information__item-footer
+                        .swiper-slide.information__item-block
+                            .information__item-block-col
+                                h5.information__item-block-name Федеральный закон №89
+                                a.link-next.link-next--tablet(href="") 
+                                    span Подробнее
+                                    svg(width="13" height="13") 
+                                        use(xlink:href="#arrow-right-icn2")
+                            p.information__item-block-text Определяет правовые основы обращения с отходами производства и потребления в целях предотвращения вредного воздействия отходов производства и потребления на здоровье человека и окружающую среду, а также вовлечения таких отходов в хозяйственный оборот в качестве дополнительных источников сырья.
+                            a.link-next.link-next--mobile(href="") 
+                                    span Подробнее
+                                    svg(width="13" height="13") 
+                                        use(xlink:href="#arrow-right-icn2")
+                        .swiper-slide.information__item-block
+                            .information__item-block-col
+                                h5.information__item-block-name Федеральный закон №458
+                                a.link-next.link-next--tablet(href="") 
+                                    span Подробнее
+                                    svg(width="13" height="13") 
+                                        use(xlink:href="#arrow-right-icn2")
+                            p.information__item-block-text О внесении изменений в Федеральный закон «Об отходах производства и потребления», отдельные законодательные акты Российской Федерации и признании утратившими силу отдельных законодательных актов
+                            a.link-next.link-next--mobile(href="") 
+                                    span Подробнее
+                                    svg(width="13" height="13") 
+                                        use(xlink:href="#arrow-right-icn2")
+                        .swiper-slide.information__item-block
+                            .information__item-block-col
+                                h5.information__item-block-name Федеральный закон №195
+                                a.link-next.link-next--tablet(href="") 
+                                    span Подробнее
+                                    svg(width="13" height="13") 
+                                        use(xlink:href="#arrow-right-icn2")
+                            p.information__item-block-text Несоблюдение требований в области охраны окружающей среды при обращении с отходами производства и потребления
+                            a.link-next.link-next--mobile(href="") 
+                                    span Подробнее
+                                    svg(width="13" height="13") 
+                                        use(xlink:href="#arrow-right-icn2")
+            span.information__label.information__label--mobile * Все ссылки ведут на сайт «КонсультантПлюс»
+        span.information__label.information__label--desctop * Все ссылки ведут на сайт «КонсультантПлюс»
+
+    .register 
+        ._container 
+            .register__wrap
+                h2.title-block Утилизируйте отходы безопасно
+                .register__content 
+                    p.register__text Наш проект «Чистая Земля» предоставляет вам эту площадку, чтобы вы могли быстро и легко пристроить свои отходы и внести свой вклад в охрану окружающей среды
+                    a.btn.btn--gradient Зарегистрироваться
+
+    .best 
+        ._container 
+            h2.title-block.best__title Лучшие предложения
+            .best__wrap 
+                .card(data-time="5 часов назад").selected
+                    svg(width="57" height="63").bookmark-icn
+                        use(xlink:href="#bookmark-icn")
+                    
+                    .card__content 
+                        img(src="img/card1.jpg" alt="")
+                        .card__content-block
+                            .card__category Резина
+                            a(href="").card__name Отходы резины / Шины, покрышки
+                    ul.card__descr 
+                        li.card__item
+                            span Адрес:
+                            span Московская область
+                        li.card__item 
+                            span Количество:
+                            span 150 шт
+                    hr
+                    .card__footer 
+                        .card__footer-col
+                            .card__price 600 000 руб
+                            .card__nds Без НДС
+                        ul.card__state 
+                            li.card__state-active Идет сбор <br> заявок
+                .card(data-time="5 часов назад") 
+                    svg(width="57" height="63").bookmark-icn
+                        use(xlink:href="#bookmark-icn-white")
+                    
+                    .card__content 
+                        img(src="img/card1.jpg" alt="")
+                        .card__content-block
+                            .card__category Резина
+                            a(href="").card__name Отходы резины / Шины, покрышки
+                    ul.card__descr 
+                        li.card__item
+                            span Адрес:
+                            span Московская область
+                        li.card__item 
+                            span Количество:
+                            span 150 шт
+                    hr
+                    .card__footer 
+                        .card__footer-col
+                            .card__price 600 000 руб
+                            .card__nds Без НДС
+                        ul.card__state 
+                            li.card__state-active Идет сбор <br> заявок
+                .card(data-time="5 часов назад") 
+                    svg(width="57" height="63").bookmark-icn
+                        use(xlink:href="#bookmark-icn-white")
+                    
+                    .card__content 
+                        img(src="img/card1.jpg" alt="")
+                        .card__content-block
+                            .card__category Резина
+                            a(href="").card__name Отходы резины / Шины, покрышки
+                    ul.card__descr 
+                        li.card__item
+                            span Адрес:
+                            span Московская область
+                        li.card__item 
+                            span Количество:
+                            span 150 шт
+                    hr
+                    .card__footer 
+                        .card__footer-col
+                            .card__price 600 000 руб
+                            .card__nds Без НДС
+                        ul.card__state 
+                            li.card__state-active Идет сбор <br> заявок
+                .card(data-time="5 часов назад") 
+                    svg(width="57" height="63").bookmark-icn
+                        use(xlink:href="#bookmark-icn-white")
+                    
+                    .card__content 
+                        img(src="img/card1.jpg" alt="")
+                        .card__content-block
+                            .card__category Резина
+                            a(href="").card__name Отходы резины / Шины, покрышки
+                    ul.card__descr 
+                        li.card__item
+                            span Адрес:
+                            span Московская область
+                        li.card__item 
+                            span Количество:
+                            span 150 шт
+                    hr
+                    .card__footer 
+                        .card__footer-col
+                            .card__price 600 000 руб
+                            .card__nds Без НДС
+                        ul.card__state 
+                            li.card__state-active Идет сбор <br> заявок
+                .card(data-time="5 часов назад") 
+                    svg(width="57" height="63").bookmark-icn
+                        use(xlink:href="#bookmark-icn-white")
+                    
+                    .card__content 
+                        img(src="img/card1.jpg" alt="")
+                        .card__content-block
+                            .card__category Резина
+                            a(href="").card__name Отходы резины / Шины, покрышки
+                    ul.card__descr 
+                        li.card__item
+                            span Адрес:
+                            span Московская область
+                        li.card__item 
+                            span Количество:
+                            span 150 шт
+                    hr
+                    .card__footer 
+                        .card__footer-col
+                            .card__price 600 000 руб
+                            .card__nds Без НДС
+                        ul.card__state 
+                            li.card__state-active Идет сбор <br> заявок
+                .card(data-time="5 часов назад") 
+                    svg(width="57" height="63").bookmark-icn
+                        use(xlink:href="#bookmark-icn-white")
+                    
+                    .card__content 
+                        img(src="img/card1.jpg" alt="")
+                        .card__content-block
+                            .card__category Резина
+                            a(href="").card__name Отходы резины / Шины, покрышки
+                    ul.card__descr 
+                        li.card__item
+                            span Адрес:
+                            span Московская область
+                        li.card__item 
+                            span Количество:
+                            span 150 шт
+                    hr
+                    .card__footer 
+                        .card__footer-col
+                            .card__price 600 000 руб
+                            .card__nds Без НДС
+                        ul.card__state 
+                            li.card__state-active Идет сбор <br> заявок
+            a.btn(href="") Посмотреть все лоты
+
+    .how-work
+        ._container
+            .how-work__header 
+                .how-work__col
+                    h2.title-block.how-work__title Как это работает
+                    p.how-work__text Наша платформа предоставляет удобный интерфейс, который позволяет покупателям и продавцам в сфере обращения с отходами общаться и заключать сделки
+            .accordion
+                .accordion__item
+                    .how-work__inner.how-work__inner--show
+                        .how-work__col
+                            span.how-work__number 01
+                            img.how-work__pic.how-work__pic--desctop(src="img/how-work.jpg" alt="")
+                        .how-work__col-content
+                            .how-work__head
+                                h4.how-work__name Создайте профиль
+                                img.how-work__toggle(src="img/icns/pluscircle.svg" alt="")
+                            .how-work__content 
+                                .how-work__text 
+                                    p Чтобы начать работу на платформе, вам необходимо создать профиль. Это даст вам доступ ко всем функциям платформы, включая возможность покупать и продавать вторсырьё, просматривать информацию о рынке и получать уведомления о сделках и обновлениях лотов. 
+                                    img.how-work__pic.how-work__pic--mobile(src="img/how-work.jpg" alt="")
+                                    p Чтобы создать профиль, просто нажмите кнопку «Создать учётную запись» и следуйте инструкциям
+                            button.btn.btn--gradient Создать учётную запись
+                .accordion__item
+                    .how-work__inner
+                        .how-work__col
+                            span.how-work__number 02
+                            img.how-work__pic.how-work__pic--desctop(src="img/how-work.jpg" alt="")
+                        .how-work__col-content
+                            .how-work__head
+                                h4.how-work__name Создайте профиль
+                                img.how-work__toggle(src="img/icns/pluscircle.svg" alt="")
+                            .how-work__content 
+                                .how-work__text.hidden 
+                                    p Чтобы начать работу на платформе, вам необходимо создать профиль. Это даст вам доступ ко всем функциям платформы, включая возможность покупать и продавать вторсырьё, просматривать информацию о рынке и получать уведомления о сделках и обновлениях лотов. 
+                                    img.how-work__pic.how-work__pic--mobile(src="img/how-work.jpg" alt="")
+                                    p Чтобы создать профиль, просто нажмите кнопку «Создать учётную запись» и следуйте инструкциям
+                            button.btn.btn--gradient Создать учётную запись
+                .accordion__item
+                    .how-work__inner
+                        .how-work__col
+                            span.how-work__number 03
+                            img.how-work__pic.how-work__pic--desctop(src="img/how-work.jpg" alt="")
+                        .how-work__col-content
+                            .how-work__head
+                                h4.how-work__name Создайте профиль
+                                img.how-work__toggle(src="img/icns/pluscircle.svg" alt="")
+                            .how-work__content 
+                                .how-work__text.hidden 
+                                    p Чтобы начать работу на платформе, вам необходимо создать профиль. Это даст вам доступ ко всем функциям платформы, включая возможность покупать и продавать вторсырьё, просматривать информацию о рынке и получать уведомления о сделках и обновлениях лотов. 
+                                    img.how-work__pic.how-work__pic--mobile(src="img/how-work.jpg" alt="")
+                                    p Чтобы создать профиль, просто нажмите кнопку «Создать учётную запись» и следуйте инструкциям
+                            button.btn.btn--gradient Создать учётную запись
+                .accordion__item
+                    .how-work__inner
+                        .how-work__col
+                            span.how-work__number 04
+                            img.how-work__pic.how-work__pic--desctop(src="img/how-work.jpg" alt="")
+                        .how-work__col-content
+                            .how-work__head
+                                h4.how-work__name Создайте профиль
+                                img.how-work__toggle(src="img/icns/pluscircle.svg" alt="")
+                            .how-work__content 
+                                .how-work__text.hidden 
+                                    p Чтобы начать работу на платформе, вам необходимо создать профиль. Это даст вам доступ ко всем функциям платформы, включая возможность покупать и продавать вторсырьё, просматривать информацию о рынке и получать уведомления о сделках и обновлениях лотов. 
+                                    img.how-work__pic.how-work__pic--mobile(src="img/how-work.jpg" alt="") 
+                                    p Чтобы создать профиль, просто нажмите кнопку «Создать учётную запись» и следуйте инструкциям
+                            button.btn.btn--gradient Создать учётную запись
+
+
+    .advantages2
+        ._container 
+            h2.title-block.advantages2__title &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Наша платформа была создана с заботой о вас, и мы постоянно стремимся сделать её лучше
+            .advantages2__wrap 
+                .advantages2__item.ga1 
+                    .advantages2__head
+                        h4.advantages2__name Проверка <br> лицензий 
+                        img.advantages2__pic(src="img/icns/group1.svg") 
+                    p.advantages2__text Вы всегда может получать достоверную информацию о наличии у контрагента лицензии на обращение с отходами
+                .advantages2__item.ga2 
+                    .advantages2__head
+                        h4.advantages2__name Безопасность
+                        img.advantages2__pic(src="img/icns/group2.svg") 
+                    p.advantages2__text Работайте только с теми контрагентами, которым доверяете
+                .advantages2__item.ga3
+                .advantages2__item.ga4 
+                    .advantages2__head
+                        h4.advantages2__name Закрытые <br> аукционы
+                        img.advantages2__pic(src="img/icns/group3.svg") 
+                    p.advantages2__text Публикуйте закрытые аукционы, которые не будут отображаться в общем каталоге и доступ к ним будет только по ссылке
+                .advantages2__item.ga5 
+                    .advantages2__head
+                        h4.advantages2__name Статистика <br> сделок
+                        img.advantages2__pic(src="img/icns/group4.svg") 
+                    p.advantages2__text Смотрите статистику по своим объектам в личном кабинете
+                .advantages2__item.ga6 
+                    .advantages2__head
+                        img.advantages2__pic(src="img/icns/group5.svg")
+                        h4.advantages2__name Подписка с уведомлениями на электронную почту
+                    p.advantages2__text Настройте способ получения уведомлений о всех активностях на площадке по интересующим вас объектам и получайте уведомления как вам удобно.
+                    img.advantages2__pic.advantages2__pic--mob(src="img/icns/group5.svg")
+
+
+    .registr2 
+        ._container 
+            .registr2__wrap 
+                h2.title-block.registr2__title Сделайте планету чище <br> с нашим сервисом
+                .registr2__subtitle Присоединяйтесь к нам и вместе мы изменим <br> управление отходами на благо окружающей среды
+                a.btn.btn--gradient(href="") Зарегистрироваться
+
+
+    section.questions 
+        ._container 
+            .questions__wrap 
+                .questions__col
+                    h2.title-block.questions__title Часто задаваемые вопросы
+                    a.btn(href="") Задать свой вопрос
+                .questions__col
+                    .accordion-wrap
+                        .accordion__head 
+                            h4.accordion__item-name Необходимо готовить всю тендерную документацию?
+                            .accordion__item-close 
+                                img(src="img/icns/pluscircle.svg" alt="")
+                        .accordion__panel 
+                            p.accordion__text Нет, такая ситуация невозможна. При публикации объявления вы указываете минимальную цену лота. Если вы обычно продаете...
+                    .accordion-wrap 
+                        .accordion__head 
+                            h4.accordion__item-name Необходимо готовить всю тендерную документацию?
+                            .accordion__item-close 
+                                img(src="img/icns/pluscircle.svg" alt="")
+                        .accordion__panel 
+                            p.accordion__text Нет, такая ситуация невозможна. При публикации объявления вы указываете минимальную цену лота. Если вы обычно продаете...
+                    .accordion-wrap 
+                        .accordion__head 
+                            h4.accordion__item-name Необходимо готовить всю тендерную документацию?
+                            .accordion__item-close 
+                                img(src="img/icns/pluscircle.svg" alt="")
+                        .accordion__panel 
+                            p.accordion__text Нет, такая ситуация невозможна. При публикации объявления вы указываете минимальную цену лота. Если вы обычно продаете...
+                    .accordion-wrap 
+                        .accordion__head 
+                            h4.accordion__item-name Необходимо готовить всю тендерную документацию?
+                            .accordion__item-close 
+                                img(src="img/icns/pluscircle.svg" alt="")
+                        .accordion__panel 
+                            p.accordion__text Нет, такая ситуация невозможна. При публикации объявления вы указываете минимальную цену лота. Если вы обычно продаете...
+                    .accordion-wrap 
+                        .accordion__head 
+                            h4.accordion__item-name Необходимо готовить всю тендерную документацию?
+                            .accordion__item-close 
+                                img(src="img/icns/pluscircle.svg" alt="")
+                        .accordion__panel 
+                            p.accordion__text Нет, такая ситуация невозможна. При публикации объявления вы указываете минимальную цену лота. Если вы обычно продаете...
+                    .accordion-wrap 
+                        .accordion__head 
+                            h4.accordion__item-name Необходимо готовить всю тендерную документацию?
+                            .accordion__item-close 
+                                img(src="img/icns/pluscircle.svg" alt="")
+                        .accordion__panel 
+                            p.accordion__text Нет, такая ситуация невозможна. При публикации объявления вы указываете минимальную цену лота. Если вы обычно продаете...
+
+
+    .last-news 
+        .last-news__head
+            h2.title-block.last-news__tilte Последние новости
+            a(href="") Все статьи
+        .last-news__content 
+            .last-news__block 
+                img(src="img/image18.jpg", alt="")
+                .last-news__inner
+                    h6.last-news__name Тюменская область стала лидером в строительстве мусорных заводов
+                    p.last-news__text Тюменская область за два года построила три мусорных завода и стала лидером среди регионов
+                    .last-news__footer 
+                        a.link-next(href="") 
+                            span Читать статью
+                            svg(width="13" height="13") 
+                                use(xlink:href="#arrow-right-icn2")
+                        span.last-news__date 20 января 2023
+            .last-news__block 
+                .last-news__inner
+                    h6.last-news__name В Подмосковье рассказали о новом способе борьбы с незаконным сбросом мусора
+                    p.last-news__text Камеры видеонаблюдения будут помогать бороться с мусором в Подмосковье
+                    .last-news__footer 
+                        a.link-next(href="") 
+                            span Читать статью
+                            svg(width="13" height="13") 
+                                use(xlink:href="#arrow-right-icn2")
+                        span.last-news__date 10 января 2023
+            .last-news__block 
+                .last-news__inner
+                    h6.last-news__name Подпишитесь на рассылку
+                    p.last-news__text и будьте в курсе самых последних событий
+                    .last-news__footer 
+                        button.subscribe-btn.btn.btn--gradient.last-news__btn Подписаться

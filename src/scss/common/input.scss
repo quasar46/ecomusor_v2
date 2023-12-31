@@ -1,0 +1,83 @@
+.input {
+    border-radius: 6px;
+    color: #07170D;
+    font-family: Commissioner;
+    font-size: 16px;
+    font-weight: 400;
+    height: 40px;
+    width: 100%;
+    border: 1px solid #E8ECF0;
+    background: transparent;
+    padding: 0 20px;
+
+    &:focus-visible {
+        outline: none;
+    }
+
+    &--icn {
+        padding-right: 40px;
+    }
+
+    &::-webkit-input-placeholder {
+        /* WebKit browsers */
+        color: rgba(7, 23, 13, 0.2);
+    }
+
+    &:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: rgba(7, 23, 13, 0.2);
+    }
+
+    &::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: rgba(7, 23, 13, 0.2);
+    }
+
+    &:-ms-input-placeholder {
+        /* Internet Explorer 10+ */
+        color: rgba(7, 23, 13, 0.2);
+    }
+    &--search {
+        height: 64px;
+        background-color: #fff;
+        border-radius: 16px;
+    }
+}
+
+.textarea {
+    color: #07170D;
+    &::-webkit-input-placeholder {
+        /* WebKit browsers */
+        color: rgba(7, 23, 13, 0.2);
+    }
+
+    &:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: rgba(7, 23, 13, 0.2);
+    }
+
+    &::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: rgba(7, 23, 13, 0.2);
+    }
+
+    &:-ms-input-placeholder {
+        /* Internet Explorer 10+ */
+        color: rgba(7, 23, 13, 0.2);
+    }
+    &:focus-visible {
+        outline: none;
+    }
+}
+
+.input-wrap {
+    position: relative;
+    img {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        right: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

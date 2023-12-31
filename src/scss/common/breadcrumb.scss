@@ -1,0 +1,34 @@
+.breadcrumb {
+    font-size: 16px;
+    line-height: 110%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    margin: 0;
+    margin-bottom: -8px;
+
+    li {
+        position: relative;
+        display: inline-block;
+        color: rgba(7, 23, 13, 0.3);
+        margin-bottom: 8px;
+        &:not(:last-child) {
+            &::after {
+                content: "";
+                background-image: url("../img/icns/material-symbols_arrow-back-ios-rounded.svg");
+                background-repeat: no-repeat;
+                background-size: 11px auto;
+                background-position: center;
+                width: 11px;
+                height: 11px;
+                display: inline-block;
+                padding: 0 8px;
+            }
+        }
+
+    }
+    @media (max-width: 1399px) {
+        font-size: 14px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
